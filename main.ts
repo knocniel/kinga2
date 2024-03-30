@@ -11,8 +11,3 @@ input.onButtonPressed(Button.B, function () {
     pins.servoWritePin(AnalogPin.P2, 0)
 })
 let PIXEL_ARRAY = neopixel.create(DigitalPin.P0, 5, NeoPixelMode.RGB)
-basic.forever(function () {
-    basic.pause(100)
-    PIXEL_ARRAY.rotate(1)
-    PIXEL_ARRAY.show()
-})
