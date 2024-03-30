@@ -10,3 +10,4 @@ input.onButtonPressed(Button.B, function () {
     pins.servoWritePin(AnalogPin.P1, 180)
     pins.servoWritePin(AnalogPin.P2, 0)
 })
+let PIXEL_ARRAY = neopixel.create(DigitalPin.P0, 5, NeoPixelMode.RGB)
